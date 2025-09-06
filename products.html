@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات - فروشگاه دیجیتال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">دیجی‌شاپ</h1>
+            <nav>
+                <a href="index.html">صفحه اصلی</a>
+                <a href="products.html">محصولات</a>
+                <a href="about.html">درباره ما</a>
+                <a href="contact.html">تماس با ما</a>
+            </nav>
+            <div class="header-actions">
+                <a href="cart.html" class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c.51 0 .962-.343 1.087-.835l1.828-6.431A1.125 1.125 0 0018.02 6H5.25L4.24 3H2.25zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5zm-3.75 0a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                    </svg>
+                    <span id="cart-count">0</span>
+                </a>
+                <button class="menu-toggle">
+                    &#9776; <!-- Hamburger Icon -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="all-products-section">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                 <h2 class="page-title">همه محصولات</h2>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="product-grid">
+                <!-- Product 1: Headphone -->
+                <div class="product-card">
+                    <img src="pics/headphone.png" alt="هدفون">
+                    <h4>هدفون بی‌سیم پرو</h4>
+                    <p>کیفیت صدای استثنایی و حذف نویز فعال.</p>
+                    <div class="price-action">
+                        <span class="price">۴,۵۰۰,۰۰۰ تومان</span>
+                        <button class="add-to-cart-btn">افزودن به سبد</button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Mobile Phone -->
+                <div class="product-card">
+                    <img src="pics/smartphone.png" alt="موبایل">
+                    <h4>گوشی هوشمند مدل X</h4>
+                    <p>صفحه نمایش آمولد و دوربین ۱۰۸ مگاپیکسلی.</p>
+                    <div class="price-action">
+                        <span class="price">۲۱,۰۰۰,۰۰۰ تومان</span>
+                        <button class="add-to-cart-btn">افزودن به سبد</button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Microphone -->
+                <div class="product-card">
+                    <img src="pics/mic.jpg" alt="میکروفون">
+                    <h4>میکروفون استودیویی</h4>
+                    <p>ایده‌آل برای پادکست، استریم و ضبط موسیقی.</p>
+                    <div class="price-action">
+                        <span class="price">۷,۲۰۰,۰۰۰ تومان</span>
+                        <button class="add-to-cart-btn">افزودن به سبد</button>
+                    </div>
+                </div>
+
+                <!-- Product 4: Laptop -->
+                <div class="product-card">
+                    <img src="pics/laptop.jpg" alt="لپتاپ">
+                    <h4>لپتاپ گیمینگ سری Z</h4>
+                    <p>پردازنده قدرتمند و کارت گرافیک نسل جدید.</p>
+                    <div class="price-action">
+                        <span class="price">۵۵,۰۰۰,۰۰۰ تومان</span>
+                        <button class="add-to-cart-btn">افزودن به سبد</button>
+                    </div>
+                </div>
+
+                <!-- Product 5: Smartwatch -->
+                <div class="product-card">
+                    <img src="pics/watch.jpg" alt="ساعت هوشمند">
+                    <h4>ساعت هوشمند Fit-Track</h4>
+                    <p>ردیابی فعالیت‌های ورزشی و ضربان قلب.</p>
+                    <div class="price-action">
+                        <span class="price">۹,۸۰۰,۰۰۰ تومان</span>
+                        <button class="add-to-cart-btn">افزودن به سبد</button>
+                    </div>
+                </div>
+                
+                <!-- Product 6: Camera -->
+                <div class="product-card">
+                    <img src="pics/cam.jpg" alt="دوربین">
+                    <h4>دوربین دیجیتال Mirrorless</h4>
+                    <p>عکاسی حرفه‌ای با سنسور فول فریم.</p>
+                    <div class="price-action">
+                        <span class="price">۸۰,۰۰۰,۰۰۰ تومان</span>
+                        <button class="add-to-cart-btn">افزودن به سبد</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>دیجی‌شاپ</h4>
+                    <p>فروشگاه تخصصی محصولات دیجیتال با ضمانت اصالت کالا و بهترین قیمت.</p>
+                </div>
+                <div>
+                    <h4>لینک‌های سریع</h4>
+                    <ul>
+                        <li><a href="#">قوانین و مقررات</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#">فرصت‌های شغلی</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>تماس با ما</h4>
+                    <p>ایمیل: sitanasiri83@gmail.com</p>
+                    <p>تلفن: 066-12345678</p>
+                    <p>آدرس: خرم آباد</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۳-۱۴۰۴ تمامی حقوق برای فروشگاه دیجی‌شاپ محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
+

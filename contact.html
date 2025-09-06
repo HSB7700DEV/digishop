@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما - فروشگاه دیجیتال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">دیجی‌شاپ</h1>
+            <nav>
+                <a href="index.html">صفحه اصلی</a>
+                <a href="products.html">محصولات</a>
+                <a href="about.html">درباره ما</a>
+                <a href="contact.html">تماس با ما</a>
+            </nav>
+            <div class="header-actions">
+                <a href="cart.html" class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c.51 0 .962-.343 1.087-.835l1.828-6.431A1.125 1.125 0 0018.02 6H5.25L4.24 3H2.25zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5zm-3.75 0a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                    </svg>
+                    <span id="cart-count">0</span>
+                </a>
+                <button class="menu-toggle">
+                    &#9776; <!-- Hamburger Icon -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="contact-page-section">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                 <h2 class="page-title">با ما در ارتباط باشید</h2>
+            </div>
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3>ارسال پیام</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">نام شما</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ایمیل شما</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">موضوع</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">پیام شما</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">ارسال</button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>اطلاعات تماس</h3>
+                    <p><strong>آدرس:</strong> خرم آباد</p>
+                    <p><strong>تلفن:</strong> 066-12345678</p>
+                    <p><strong>ایمیل:</strong> sitanasiri83@gmail.com</p>
+                    
+                    <h3 class="info-title">ساعات کاری</h3>
+                    <p>شنبه تا چهارشنبه: ۹ صبح تا ۶ عصر</p>
+                    <p>پنج‌شنبه: ۹ صبح تا ۱ ظهر</p>
+
+                    <div class="map-placeholder">
+                        <p>محل ما روی نقشه</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>دیجی‌شاپ</h4>
+                    <p>فروشگاه تخصصی محصولات دیجیتال با ضمانت اصالت کالا و بهترین قیمت.</p>
+                </div>
+                <div>
+                    <h4>لینک‌های سریع</h4>
+                    <ul>
+                        <li><a href="#">قوانین و مقررات</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#">فرصت‌های شغلی</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>تماس با ما</h4>
+                    <p>ایمیل: sitanasiri83@gmail.com</p>
+                    <p>تلفن: 066-12345678</p>
+                    <p>آدرس: خرم آباد</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۳-۱۴۰۴ تمامی حقوق برای فروشگاه دیجی‌شاپ محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
+
