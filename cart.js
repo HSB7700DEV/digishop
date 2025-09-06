@@ -137,20 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const total = subtotal + shipping;
 
         cartSummaryContainer.innerHTML = `
-            <h3>خلاصه سبد خرید</h3>
-            <div class="summary-row">
-                <span>جمع کل</span>
-                <span>${subtotal.toLocaleString()} تومان</span>
-            </div>
-            <div class="summary-row">
-                <span>هزینه ارسال</span>
-                <span>${shipping.toLocaleString()} تومان</span>
-            </div>
-            <hr style="border: 1px solid #f3f4f6; margin: 1rem 0;">
-            <div class="summary-row" style="font-weight: bold; font-size: 1.25rem;">
-                <span>مبلغ قابل پرداخت</span>
-                <span>${total.toLocaleString()} تومان</span>
-            </div>
             <button class="checkout-btn">ادامه فرآیند خرید</button>
         `;
     }
