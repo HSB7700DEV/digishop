@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سفارش شما ثبت شد - فروشگاه دیجیتال</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+             <div class="header-left">
+                <a href="user/panel.html" class="login-btn">حساب کاربری</a>
+                <a href="cart.html" class="cart-icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c.51 0 .962-.344 1.087-.849l1.855-6.992a.75.75 0 00-.732-.962H5.25l-.16- .598A1.125 1.125 0 003.938 6H2.25M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c.51 0 .962-.344 1.087-.849l1.855-6.992a.75.75 0 00-.732-.962H5.25l-.16- .598A1.125 1.125 0 003.938 6H2.25" /></svg>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+            <h1 class="logo">دیجی‌شاپ</h1>
+            <nav>
+                <a href="index.html">صفحه اصلی</a>
+                <a href="products.html">محصولات</a>
+                <a href="about.html">درباره ما</a>
+                <a href="contact.html">تماس با ما</a>
+            </nav>
+            <button class="menu-toggle">&#9776;</button>
+        </div>
+    </header>
+    <main class="main-content container">
+        <div class="success-container">
+            <div class="success-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <h2>سفارش شما با موفقیت ثبت شد!</h2>
+            <p>از خرید شما سپاسگزاریم. جزئیات سفارش شما در <a href="user/panel.html">پنل کاربری</a> قابل مشاهده است.</p>
+            <p>شماره سفارش شما: <strong id="order-id"></strong></p>
+            <a href="products.html" class="continue-shopping-btn">بازگشت به فروشگاه</a>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>دیجی‌شاپ</h4>
+                    <p>فروشگاه تخصصی محصولات دیجیتال با ضمانت اصالت کالا و بهترین قیمت.</p>
+                </div>
+                <div>
+                    <h4>لینک‌های سریع</h4>
+                    <ul>
+                        <li><a href="#">قوانین و مقررات</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#">فرصت‌های شغلی</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>تماس با ما</h4>
+                    <p>ایمیل: sitanasiri83@gmail.com</p>
+                    <p>تلفن: 066-12345678</p>
+                    <p>آدرس: خرم آباد</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۳-۱۴۰۴ تمامی حقوق برای فروشگاه دیجی‌شاپ محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/checkout-success.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const orderIdElement = document.getElementById('order-id');
+            const lastOrderId = localStorage.getItem('lastOrderId');
+            if (orderIdElement && lastOrderId) {
+                orderIdElement.textContent = lastOrderId;
+            }
+        });
+    </script>
+</body>
+</html>

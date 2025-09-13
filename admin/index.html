@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد ادمین</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <h2>پنل ادمین</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">داشبورد</a></li>
+                    <li><a href="users.html">مدیریت کاربران</a></li>
+                    <li><a href="orders.html">مدیریت سفارشات</a></li>
+                    <li><a href="../index.html">بازگشت به سایت</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="admin-content">
+            <header class="admin-header">
+                <h1>داشبورد</h1>
+            </header>
+            <section class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>کل کاربران</h3>
+                    <p id="total-users">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>کل سفارشات</h3>
+                    <p id="total-orders">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>درآمد کل (تومان)</h3>
+                    <p id="total-revenue">0</p>
+                </div>
+            </section>
+            <section>
+                <h2>آخرین سفارشات</h2>
+                <div class="table-container" id="recent-orders-container">
+                    <!-- Recent orders will be loaded here by admin.js -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

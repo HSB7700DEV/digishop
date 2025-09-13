@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت کاربران</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <h2>پنل ادمین</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">داشبورد</a></li>
+                    <li><a href="users.html" class="active">مدیریت کاربران</a></li>
+                    <li><a href="orders.html">مدیریت سفارشات</a></li>
+                    <li><a href="../index.html">بازگشت به سایت</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="admin-content">
+            <header class="admin-header">
+                <h1>مدیریت کاربران</h1>
+            </header>
+            <section>
+                <div class="table-container" id="users-table-container">
+                    <!-- Users table will be loaded here by admin.js -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
