@@ -47,7 +47,9 @@ a {
 }
 
 .site-header nav {
-    margin: 0 auto; /* This is the key change: centers nav and pushes other items to the sides */
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
 }
 
 .header-actions {
